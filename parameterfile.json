@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "myakscluster"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "vnetName": {
+      "value": "myvnet"
+    },
+    "vnetAddressPrefix": {
+      "value": "10.0.0.0/16"
+    },
+    "aksSubnetName": {
+      "value": "akssubnet"
+    },
+    "aksSubnetPrefix": {
+      "value": "10.0.1.0/24"
+    },
+    "privateEndpointName": {
+      "value": "myprivateendpoint"
+    },
+    "privateEndpointSubnetId": {
+      "value": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{privateEndpointSubnetName}"
+    }
+  }
+}
